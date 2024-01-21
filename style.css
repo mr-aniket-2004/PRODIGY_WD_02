@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+.main{
     background-image: url(bg.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    /* background-color: aqua; */
     width: 100%;
     height: 100vh;
     display: flex;
@@ -69,3 +70,36 @@ body{
     border: 1px solid #b6b6b6;
     
 } 
+
+@media only screen and (max-width:1024px){
+
+    .main{
+        background-image: url(bg.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .main{
+        background-image: url(bg.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+    }
+    .timer-Display{
+        margin-left: 40px;
+    }
+    .buttons{
+        margin: 0;
+        margin-top: 40px;
+    }
+    .buttons button{
+        width: 70px;
+    }
+}
